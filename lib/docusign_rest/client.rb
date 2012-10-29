@@ -86,7 +86,7 @@ module DocusignRest
 
       # Explicitly verifies that the certificate matches the domain. Requires
       # that we use www when calling the production DocuSign API
-      http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
       http
     end
